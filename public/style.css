@@ -1,0 +1,198 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* HEADER */
+.cabecalho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #444;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.cabecalho h1 {
+  font-size: 20px;
+}
+
+/* MENU LATERAL */
+.menu-lateral {
+  width: 150px;
+  background: #ddd;
+  padding: 20px;
+}
+.menu-lateral ul {
+  list-style: none;
+}
+.menu-lateral li {
+  margin-bottom: 10px;
+}
+.menu-lateral a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* MAIN */
+.principal {
+  display: flex;
+  gap: 20px;
+  padding: 60px;
+}
+
+/* GALERIA */
+.galeria {
+  flex: 1;
+}
+.galeria h2 {
+  margin: 15px 0;
+}
+.lista-cartas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.carta {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.carta img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+.seta {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.seta:hover {
+  background: #666;
+}
+
+/* PESQUISA */
+.pesquisa {
+  background: #ddd;
+  padding: 20px;
+  margin-top: 20px;
+}
+.pesquisa form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.pesquisa input {
+  padding: 8px;
+  border: 1px solid #aaa;
+}
+.pesquisa button {
+  padding: 8px 12px;
+  background: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.buscar:hover {
+  background: #666;
+}
+
+/* CORES */
+.cores {
+  margin-top: 10px;
+}
+.botoes-cores {
+  display: flex;
+  gap: 10px;
+}
+.cor {
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+}
+.cor img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.mana {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.mana.checked {
+  position: relative;
+}
+
+.mana.checked:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-image: url("imagens/mana/checkmark.png");
+  background-size: contain;
+  background-position: center;
+  opacity: 80%;
+}
+
+.mana.branca {
+  background-image: url("imagens/mana/W.svg");
+}
+.mana.azul {
+  background-image: url("imagens/mana/U.svg");
+}
+.mana.preta {
+  background-image: url("imagens/mana/B.svg");
+}
+.mana.vermelha {
+  background-image: url("imagens/mana/R.svg");
+}
+.mana.verde {
+  background-image: url("imagens/mana/G.svg");
+}
+.mana.incolor {
+  background-image: url("imagens/mana/C.svg");
+}
+
+.mana:hover {
+  transform: scale(1.25);
+}
+
+/* FOOTER */
+.rodape {
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
