@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coleção Magic</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1>Coleção Magic</h1>
+      <nav class="menu-topo">
+        <button>Menu Navegação</button>
+      </nav>
+    </header>
+
+    <main class="principal">
+      <!-- MENU LATERAL -->
+      <nav class="menu-lateral">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cartas</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- ÁREA DE CARTAS -->
+      <section class="galeria">
+        <section class="destaques">
+          <h2>Cartas em Destaque</h2>
+          <div class="lista-cartas">
+            <button class="seta">&lt;</button>
+            <article class="carta">
+              <img src="imagens/cartas/sword-of-feast-and-famine.jpg" alt="Carta 1" />
+              <p>Sword of Feast and Famine <br>BRL 87,14</p>
+            </article>
+            <article class="carta">
+              <img src="imagens/cartas/war-54-jace-wielder-of-mysteries.jpg" alt="Carta 2" />
+              <p>Jace, Wielder of Mysteries <br>BRL 18,43</p>
+            </article>
+            <article class="carta">
+              <img src="imagens/cartas/eoc-86-blasphemous-act.jpg" alt="Carta 3" />
+              <p>Blasphemous Act<br>BRL 11,16</p>
+            </article>
+            <article class="carta">
+              <img src="imagens/cartas/dsc-114-counterspell.jpg" alt="Carta 4" />
+              <p>Counterspell<br>BRL 4,81</p>
+            </article>
+            <button class="seta">&gt;</button>
+          </div>
+        </section>
+
+        <section class="novas">
+          <h2>Cartas Novas</h2>
+          <div class="lista-cartas">
+            <button class="seta">&lt;</button>
+            <article class="carta">
+              <img src="imagens/cartas/eoe-192-icetill-explorer.jpg" alt="Carta 5" />
+              <p>Icetill Explorer<br>BRL 68,69</p>
+            </article>
+            <article class="carta">
+              <img src="imagens/cartas/eoe-239-the-dominion-bracelet.jpg" alt="Carta 6" />
+              <p>The Dominion Bracelet<br>BRL 17,99</p>
+            </article>
+            <article class="carta">
+              <img src="imagens/cartas/dsk-220-kaito-bane-of-nightmares.jpg" alt="Carta 7" />
+              <p>Kaito, Bane of Nightmares<br>BRL 179,49</p>
+            </article>
+            <article class="carta">
+              <img src="imagens/cartas/big-29-fomori-vault.jpg" alt="Carta 8" />
+              <p>Fomori Vault<br>BRL 49,90</p>
+            </article>
+            <button class="seta">&gt;</button>
+          </div>
+        </section>
+      </section>
+
+      <!-- PESQUISA -->
+      <section class="pesquisa">
+        <h2>Pesquisa de carta</h2>
+        <form>
+          <input type="text" placeholder="Nome" />
+          <input type="number" placeholder="Custo" />
+          <button type="submit" class="buscar">Buscar</button>
+        </form>
+        <div class="cores">
+          <h3>Cores</h3>
+          <div class="botoes-cores">
+            <div class="botoes-cores">
+              <button class="mana branca"></button>
+              <button class="mana azul"></button>
+              <button class="mana preta"></button>
+              <button class="mana vermelha"></button>
+              <button class="mana verde"></button>
+              <button class="mana incolor"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>© 2025 Coleção Magic - Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
